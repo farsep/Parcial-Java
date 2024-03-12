@@ -1,8 +1,11 @@
+import java.time.LocalDate;
+import java.util.Date;
+
 public class ObraSocial extends Paciente {
     private String nombreObraSocial;
     private String numeroAsociado;
 
-    public ObraSocial(Date fechaDeNacimiento, String nombre, String apellido, boolean primeraConsulta, Consulta consulta, String nombreObraSocial, String numeroAsociado) {
+    public ObraSocial(LocalDate fechaDeNacimiento, String nombre, String apellido, boolean primeraConsulta, Consulta consulta, String nombreObraSocial, String numeroAsociado) {
         super(fechaDeNacimiento, nombre, apellido, primeraConsulta, consulta);
         this.nombreObraSocial = nombreObraSocial;
         this.numeroAsociado = numeroAsociado;
